@@ -1,0 +1,561 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?d6v1wx');
+  src:  url('../../fonts/icomoon.eot?d6v1wx#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?d6v1wx') format('truetype'),
+    url('../../fonts/icomoon.woff?d6v1wx') format('woff'),
+    url('../../fonts/icomoon.svg?d6v1wx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* Previene problemas con extensiones de navegador que modifican fuentes */
+  font-family: 'icomoon' !important; /* Fuente personalizada */
+  speak: never; /* Evita que lectores de pantalla interpreten los iconos */
+  
+  /* Propiedades de estilo de fuente */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none; /* Asegura que el texto no cambie de mayúsculas/minúsculas */
+  line-height: 1; /* Ajusta la altura de línea para un mejor alineado */
+  
+  /* Mejora del renderizado de fuentes en navegadores */
+  -webkit-font-smoothing: antialiased; /* Suavizado en navegadores basados en WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Suavizado en macOS con navegadores basados en Gecko */
+}
+
+/* Íconos personalizados generados por IcoMoon */
+.icon-meni:before {
+  content: "\e9bd"; /* Código unicode del ícono */
+}
+.icon-mail:before {
+  content: "\ea83";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-whatsapp:before {
+  content: "\ea93";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+
+
+/* fonts */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+--green-color: #7acc2d;
+--white-color: white;
+--black-color: #000;
+/* tipografia */
+--normal: 12px;
+/* espaciado */
+--space: 10px;
+/* box shadow */
+--box:0 0 2px #c1bcbc;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  font-family:'Open Sans', sans-serif;
+}
+
+body{
+  background-color: #093145;
+}
+
+/* estilos nav */
+
+nav{
+  position:sticky;
+  top: 0px;
+  z-index: 10;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  background-color: #093145;
+  padding: 5px 10px;
+  font-size: var(--normal);
+  font-family: sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo{
+  width: 35px;
+  height: auto;
+  border-radius: 10px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a{
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+nav li a:hover{
+  color:red;
+}
+
+/* hero */
+
+.hero{
+  display: flex;
+  height: 600px;
+  background-image: url(../../assets/images/hero/hero2.jpg);
+  background-size: cover;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-text{
+  display: block;
+  padding: 5px 10px;
+  color: #000;
+  background-color: #0d3d56;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+  /* font-family: fantasy; */
+}
+
+.hero a{
+  text-decoration: none;
+}
+
+#h1-hero{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text:hover{
+  background-color: #3c6478;
+}
+
+/* main section */
+
+.main-section{
+  padding: 15%;
+  text-align: center;
+}
+
+.products{
+  background-image: url("../../assets/images/products/curve.png");
+  height: 95px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 15%;
+  display: flex;
+  justify-content: center;
+}
+
+.product{
+  padding: 10px;
+  margin-top: -240px;
+}
+
+.content{
+  text-align: center;
+}
+
+.product .content{
+  background-color: var(--white-color);
+  padding: var(--space);
+  box-shadow: var(--box);
+}
+
+.img-content{
+  text-align: center;
+}
+
+.main-button, .main-button-bene, .main-button-action{
+  background-color: var(--green-color);
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor:pointer;
+  border-radius: 2px;
+}
+
+.main-button:hover{
+  background-color: #5e9e22;
+}
+
+.main-button-bene:hover{
+  background-color: #5e9e22;
+}
+
+.main-button-action:hover{
+  background-color: #5e9e22;
+}
+
+.main-button-bene, .main-button-action{
+  width: 50%;
+}
+
+.main-button{
+  width: 100%;
+}
+
+.main-button-action{
+  margin-top: 20px;
+}
+
+/* beneficios */
+
+.benefits{
+  /* display: flex; */
+  height: 500px;
+  /* justify-content: center;
+  align-items: center; */
+  margin-top: 70px;
+}
+
+.beneficios{
+  text-align: center;
+}
+
+.bene-title{
+  text-align: center;
+}
+
+.bene-title h1{
+  font-size: xx-large;
+  margin: 5px;
+  color: var(--white-color);
+}
+
+.bene-products{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.bene-product{
+  padding: var(--space);
+  text-align: center;
+  width: 30%;
+  height: 100%;
+}
+
+.bene-content{
+  padding: var(--space);
+  border-radius: 10px;
+  border: 1px solid cyan;
+  height: 100%;
+}
+
+.bene-content p{
+  text-align: justify;
+}
+
+.bene-content h1, .bene-content p{
+  margin: 5px 0px;
+  color: var(--white-color)
+}
+
+.bene-img-content{
+  /* width: 300px; */
+  height: 250px;
+  width: 100%;
+}
+
+.bene-imagen{
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+/* menciones */
+
+.memorable{
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #06d7a0; */
+}
+
+.menciones{
+  height: 520px;
+  width: 90%;
+}
+
+.men-title{
+  text-align: center;
+}
+
+.men-title h1{
+  font-size: xx-large;
+  margin: 5px;
+  color: var(--white-color);
+}
+
+.men-products, .men-products-down{
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.men-product, .men-product-down{
+  padding: var(--space);
+  text-align: center;
+}
+
+.men-product{
+  width: 40%;
+}
+
+.men-product-down{
+  width: 35%;
+}
+
+.men-content{
+  padding: var(--space);
+  box-shadow: 0 0 5px #fff;
+  border-radius: 10px;
+  /* width: 250px; */
+  /* height: 500px; */
+}
+
+.men-content:hover{
+  box-shadow: 0 0 5px #fff;
+  background-color: #0d3d56;
+}
+
+.men-content h2{
+  margin: 5px 0px 0px 0px;
+}
+
+.men-content p{
+  margin: 5px 0 15px;
+  text-align: justify;
+}
+
+.men-content h6{
+  margin: 2px 0px 5px 0px;
+}
+
+.men-content h2, .men-content p, .men-content h6{
+  color: var(--white-color);
+}
+
+.men-img-content{
+  /* width: 250px; */
+  height: 350px;
+  width: 100%;
+}
+
+.men-imagen{
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer{
+  text-align: right;
+  background-color: #093145;
+  color: var(--white-color)
+}
+
+footer div{
+  padding: 0px 15px
+}
+
+footer a{
+  color:var(--white-color);
+}
+
+footer a:hover{
+  color:red;
+}
+
+/* form */
+
+.contact {
+  /* background-color: #056fff; */
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.icon-facebook, .icon-twitter, .icon-github, .icon-instagram{
+  text-decoration: none;
+  font-size: 40px;
+  color: #fff;
+  padding-right: 15px;
+}
+
+form{
+  margin-left: 20px;
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../../assets/images/form-email/sobre.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button{
+  display: block;
+  margin-top: 10px;
+  background-color: #607D8B;
+  color: white;
+  padding: 10px 0px;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+label, p{
+  font-size: var(--normal);
+}
+
+/* subscription */
+
+.modulo_subscription{
+  background-color: #0d3d56;
+  box-shadow: var(--box);
+  padding: var(--space);
+  text-align: center;
+}
+
+.modulo-cajaimagen{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+.modulo-img{
+  width: 100%;
+}
+
+.data{
+  margin-top: var(--space);
+  width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid var(--black-color);
+  box-sizing: border-box;
+}
+
+.main-btn{
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-btn:hover{
+  box-shadow: 0 0 5px #fff;
+  background-color: #0d3d56;
+}
+
+.social-venta{
+  text-align: center;
+}
+
+/* pagina producto ind */
+
+.grid-container{
+  max-width: 980px;
+  margin: auto;
+  text-align: center;
+}
+
+.blogpost-img-container{
+  padding: 0 50px 40px;
+  height: 450px;
+}
+
+.blogpost-img-container img{
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+.blogpost-main-container{
+  padding: 0 50px 40px;
+}
+
+.blogpost-main-container img{
+  width: 16%;
+  float: left;
+  padding: 10px;
+}
+
+.blogpost-main-container article{
+  color: #fff;
+}
+
+.blogpost-main-container article h1{
+  font-size: 35px;
+}
+
+.blogpost-main-container article p{
+  text-align: justify;
+  font-size: .8em;
+}
+
+.image-left {
+  float: left;
+  margin-right: 15px; /* Espacio entre la imagen y el texto */
+  margin-bottom: 10px; /* Espacio inferior */
+  width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 8px; /* Esquinas redondeadas (opcional) */
+}
+.article-container {
+  overflow: hidden; /* Asegura que el contenedor no se deforme con el flotado */
+  margin-bottom: 20px; /* Espaciado entre secciones */
+}

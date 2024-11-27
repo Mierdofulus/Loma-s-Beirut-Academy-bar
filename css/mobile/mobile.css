@@ -1,0 +1,208 @@
+@media (max-width: 900px) {
+
+  .col-8, .col-4{
+    padding: 10px 0px !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+.hero{
+  background-position: center;
+  height: 800px;
+  background-image: url(../../assets/images/hero/hero4.jpg);
+  justify-content: center;
+}
+
+.hero-text{
+  background-image: url(../../assets/images/hero/flechas.png);
+  background-color: transparent;
+  margin-left: 0px;
+  width: 40px;
+  height: 50px;
+  background-size: cover;
+  border: none;
+  background-position: center;
+  border-radius: unset;
+}
+
+.hero-text h1{
+  display: none;
+}
+
+nav{
+  border: 2px solid #fff;
+}
+
+.nav_options li{
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+#logo{
+  width: 55px;
+}
+
+/* .products{
+  width: fit-content;
+}
+
+.product{
+  margin-top: auto;
+} */
+
+.main-section, .bene-title, .men-title{
+  padding: 4%;
+}
+
+.menciones{
+  width: 100%;
+}
+
+.menciones, .memorable, .beneficios,
+.benefits, .mentions, .products, .bene-products,
+.men-products-down, .contact, .men-products{
+  height: auto;
+}
+
+.men-products,
+.bene-products,
+.contact{
+  display: block;
+}
+
+.men-product, .bene-product{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.men-content h2{
+  font-size: 2em;
+}
+
+.men-content p, .bene-content p{
+  font-size: 1em;
+}
+
+.men-content a button{
+  font-size: 18px;
+}
+
+.benefits{
+  margin: 30px 0;
+}
+
+
+.beneficios a button{
+  width: 80%;
+  font-size: 15px;
+}
+
+.men-products-down{
+  flex-wrap: wrap;
+}
+
+.men-product-down{
+  width: 45%;
+}
+
+.contact{
+  text-align: center;
+}
+
+.form-email{
+  margin-left: initial;
+}
+
+.form-email button{
+  margin: 10px auto;
+}
+
+.social, .form-email,{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0;
+}
+
+footer div{
+  text-align: center;
+}
+
+/* producto pagina */
+
+.container h1{
+  color: #fff;
+}
+
+.row1, .row2, .row3{
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.p1d p, .p2i p{
+  text-align: justify;
+  font-size: 16px;
+}
+
+.p1d h1, .p2i h1{
+  color: #000;
+}
+
+ .blogpost-main-container img{
+   width: 50%;
+ }
+
+}
+
+@media (max-width:480px) {
+  .nav_options ul{
+    padding: 0;
+  }
+
+  .nav_options li{
+    font-size: 14px
+  }
+
+  .men-product, .bene-product{
+    width: 90%;
+  }
+
+  .men-product-down{
+    width: 80%
+  }
+
+  .men-content p, .bene-content p{
+    font-size: .8em;
+  }
+
+  .men-content a button{
+    font-size: 16px;
+  }
+
+  .blogpost-img-container{
+    height: auto;
+    padding: 0 25px 10px;
+  }
+
+  .blogpost-main-container img{
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+
+@media (max-width:320px) {
+
+  .blogpost-img-container{
+    padding: 0 5px 5px;
+  }
+
+  .blogpost-main-container {
+    padding: 0 25px;
+  }
+
+  .blogpost-main-container article h1{
+    font-size: 25px;
+  }
+}
